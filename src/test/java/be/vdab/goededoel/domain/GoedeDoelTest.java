@@ -21,4 +21,8 @@ public class GoedeDoelTest {
 	public void getNaam() {
 		assertEquals(NAAM, doel.getNaam());
 	}
+
+	@Test
+	void eenNieuwDoelHeeftNogGeenOpbrengst() { assertThat(doel.getOpgebracht()).isZero();
+	}
 }
